@@ -1,0 +1,88 @@
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  &__right {
+    padding-top: 65px;
+
+    width: 49%;
+    @media (max-width: 768px) {
+      width: 100%;
+      iFrame {
+        height: 600px;
+      }
+    }
+
+    button {
+      background: #45821a;
+      border-radius: 25px;
+      padding: 29px 22px;
+      width: 100%;
+      border: none;
+      color: white;
+    }
+  }
+  &__left {
+    padding-top: 65px;
+
+    width: 49%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    button {
+      background: #7a00d5;
+      border-radius: 25px;
+      padding: 29px 22px;
+      width: 100%;
+      border: none;
+      color: white;
+    }
+    &__input {
+      background: white;
+      padding: 29px 22px;
+      border-radius: 25px;
+      margin-bottom: 20px;
+      width: 100%;
+      label {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+
+        color: #4e4d4f;
+      }
+      input {
+        border: none;
+        outline: none;
+        margin-left: 10px;
+      }
+    }
+  }
+  &__input {
+    background: white;
+    padding: 29px 22px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    width: 49%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    label {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+
+      color: #4e4d4f;
+    }
+    input {
+      border: none;
+      outline: none;
+      margin-left: 10px;
+    }
+  }
+}

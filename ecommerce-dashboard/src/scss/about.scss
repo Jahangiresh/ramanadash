@@ -1,0 +1,109 @@
+.about {
+  &__title {
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #4e4d4f;
+    margin-bottom: 72px;
+  }
+  &__row {
+    p {
+      margin: 0 0 22px 20px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: capitalize;
+      color: #8e8c8f;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      label {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: capitalize;
+        color: #4e4d4f;
+
+        margin: 0 0 22px 20px;
+      }
+      .about__input {
+        resize: none;
+        background: #ffffff;
+        border: 1px solid #dad9d6;
+        border-radius: 25px;
+        padding: 13px;
+        margin-bottom: 50px;
+        outline: none;
+      }
+
+      .custom-file-input::-webkit-file-upload-button {
+        display: none;
+      }
+      .custom-file-input::before {
+        content: "UPLOAD";
+        color: white;
+        cursor: pointer;
+        background: #7a00d5;
+        border-radius: 25px;
+        padding: 13px 100px;
+        margin-right: 20px;
+        display: inline-block;
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      label {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: capitalize;
+        color: #4e4d4f;
+        margin-left: 20px;
+        margin-bottom: 22px;
+      }
+      .about__input {
+        resize: none;
+        background: #ffffff;
+        border: 1px solid #dad9d6;
+        border-radius: 25px;
+        padding: 13px;
+        margin-bottom: 50px;
+        outline: none;
+      }
+
+      .custom-file-input::-webkit-file-upload-button {
+        display: none;
+      }
+      .custom-file-input::before {
+        content: "UPLOAD";
+        color: white;
+        cursor: pointer;
+        background: #7a00d5;
+        border-radius: 25px;
+        padding: 13px 100px;
+        margin-right: 20px;
+        display: inline-block;
+      }
+    }
+  }
+}

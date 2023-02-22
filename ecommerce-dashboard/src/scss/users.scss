@@ -1,0 +1,114 @@
+.users {
+  background: #ffffff;
+  border: 1px solid #dad9d6;
+  border-radius: 25px;
+  padding: 20px;
+  &__header {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 13px;
+    &__ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      justify-content: space-between;
+      &__li {
+        list-style: none;
+
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 30px;
+        color: #4e4d4f;
+        width: calc(100 / 6);
+      }
+    }
+  }
+  &__body {
+    padding: 0 20px;
+    &__ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0;
+      border-bottom: 1px solid #e3e3e3;
+      &__li {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        color: #000000;
+        width: calc(100 / 6);
+      }
+    }
+  }
+}
+.edituser {
+  &__row {
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      &__label {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 8px;
+        color: #4e4d4f;
+      }
+      &__input {
+        background: #ffffff;
+        border: 1px solid #dad9d6;
+        border-radius: 25px;
+        outline: none;
+        padding: 10px;
+        margin-bottom: 50px;
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      &__label {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 8px;
+        color: #4e4d4f;
+      }
+      &__input {
+        background: #ffffff;
+        border: 1px solid #dad9d6;
+        border-radius: 25px;
+        outline: none;
+        padding: 10px;
+        margin-bottom: 50px;
+      }
+    }
+    .savebtn {
+      display: flex;
+      justify-content: center;
+      .save__btn {
+        width: 684px;
+        height: 85px;
+        background: #039d1c;
+        border-radius: 25px;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

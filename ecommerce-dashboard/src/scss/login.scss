@@ -1,0 +1,70 @@
+.login {
+  //   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  img {
+    width: 270px;
+    height: 280px;
+  }
+  .input__h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #4e4d4f;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    .input__labels {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      text-transform: capitalize;
+      margin: 0 0 11px 20px;
+      color: #4e4d4f;
+    }
+    &__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: capitalize;
+      button {
+        background: #039d1c;
+        border-radius: 15px;
+        padding: 11px 51px;
+        border: none;
+        text-transform: capitalize;
+        color: white;
+      }
+      .checkbox {
+        // background: red;
+        height: 30px;
+        label {
+          margin-left: 10px;
+        }
+      }
+    }
+    @media (max-width: 560px) {
+      width: 100%;
+    }
+    input {
+      margin-bottom: 30px;
+      background: #ffffff;
+      border: 1px solid #dad9d6;
+      border-radius: 25px;
+      padding: 13px;
+      outline: none;
+    }
+  }
+}

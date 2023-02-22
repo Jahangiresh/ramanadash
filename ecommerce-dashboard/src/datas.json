@@ -1,0 +1,19 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "user": "jahangir sh",
+      "status": "pending",
+      "product": "ayaqqabi",
+      "quantity":3
+
+    }, {
+      "id": 2,
+      "user": "ceyhun",
+      "status": "pending",
+      "product": "ayaqqabi",
+      "quantity":4
+
+    }
+  ]
+}
