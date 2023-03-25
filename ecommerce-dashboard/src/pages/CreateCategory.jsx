@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import "../scss/productdetails.scss";
 import { useNavigate } from "react-router-dom";
-import prodImg from "../assets/images/avt.jpg";
-
+// import prodImg from "../assets/images/avt.jpg";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import {

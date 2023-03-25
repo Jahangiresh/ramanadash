@@ -10,7 +10,7 @@ export const fetchAllCategories = createAsyncThunk(
   "categories/getAPI",
   async () => {
     const response = await axios.get(
-      "https://newramana.azurewebsites.net/api/category"
+      "http://irp.ramanacastle.com/api/categroy"
     );
 
     return response.data.data;
@@ -21,7 +21,32 @@ export const saveNewCategory = createAsyncThunk(
   "categories/postApi",
   async (payload) => {
     const response = await axios.post(
-      "https://newramana.azurewebsites.net/api/category",
+      "http://irp.ramanacastle.com/api/categroy/update/31",
+      payload
+    );
+    return response.data;
+  }
+);
+
+
+export const updateCategory = createAsyncThunk(
+  "categories/putApi",
+  async (payload) => {
+    const response = await axios.post(
+      "http://irp.ramanacastle.com/api/categroy/update/31",
+      payload
+    );
+    return response.data;
+  }
+);
+
+
+
+export const deleteCategory = createAsyncThunk(
+  "categories/deleteApi",
+  async (payload) => {
+    const response = await axios.post(
+      "http://irp.ramanacastle.com/api/delete/category/1",
       payload
     );
     return response.data;

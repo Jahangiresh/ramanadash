@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getLoading, saveNewGender } from "../features/genders/genderSlice";
+import { getAllGenders, getLoading, saveNewGender } from "../features/genders/genderSlice";
 import * as yup from "yup";
 const CreateGender = () => {
   const navigate = useNavigate();
@@ -16,6 +16,8 @@ const CreateGender = () => {
 
   let dispatch = useDispatch();
   const loading = useSelector(getLoading);
+  const genders = useSelector(saveNewGender);
+  console.log(genders); 
 
   const submitHandler = (data) => {
     var req = new FormData();

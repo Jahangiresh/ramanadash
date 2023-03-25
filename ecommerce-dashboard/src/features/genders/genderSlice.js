@@ -8,12 +8,20 @@ const initialState = {
 }
 
 export const fetchAllGenders = createAsyncThunk("genders/getAPI", async () => {
-    const response = await axios.get("https://newramana.azurewebsites.net/api/gender");
+    const response = await axios.get("http://irp.ramanacastle.com/api/gender")
     return response.data.data;
 });
 
-export const saveNewGender = createAsyncThunk("genders/getApi", async (payload) => {
-    const response = await axios.post("https://newramana.azurewebsites.net/api/gender", payload)
+export const saveNewGender = createAsyncThunk("genders/postApi", async (payload) => {
+    const response = await axios.post("http://irp.ramanacastle.com/api/gender/store", payload)
+    return response.data
+})
+export const updateGender = createAsyncThunk("genders/putApi", async (payload) => {
+    const response = await axios.post("http://irp.ramanacastle.com/api/gender/update/2", payload)
+    return response.data
+})
+export const deleteGender = createAsyncThunk("genders/deleteApi", async (payload) => {
+    const response = await axios.post("http://irp.ramanacastle.com/api/delete/gender/1", payload)
     return response.data
 })
 export const genderSlice = createSlice({

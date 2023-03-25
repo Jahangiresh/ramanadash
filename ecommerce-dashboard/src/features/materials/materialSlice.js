@@ -8,12 +8,28 @@ const initialState = {
 }
 
 export const fetchAllMaterials = createAsyncThunk("materials/getAPI", async () => {
-    const response = await axios.get("https://newramana.azurewebsites.net/api/material");
+    const response = await axios.get("http://irp.ramanacastle.com/api/material");
+
+    return response.data.data;
+});
+export const createMaterials = createAsyncThunk("materials/postAPI", async (payload) => {
+    const response = await axios.get("http://irp.ramanacastle.com/api/material/store",payload);
+
+    return response.data.data;
+});
+
+export const updateMaterials = createAsyncThunk("materials/putAPI", async (payload) => {
+    const response = await axios.get("http://irp.ramanacastle.com/api/material/update/1",payload);
 
     return response.data.data;
 });
 
 
+export const deleteMaterials = createAsyncThunk("materials/putAPI", async (payload) => {
+    const response = await axios.get("http://irp.ramanacastle.com/api/delete/color/1",payload);
+
+    return response.data.data;
+});
 export const materialSlice = createSlice({
     name: "materials",
     initialState: initialState,
